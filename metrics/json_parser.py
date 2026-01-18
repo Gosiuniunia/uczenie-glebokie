@@ -12,6 +12,6 @@ def parse_json_to_separate_files(json_line):
         
 
 if __name__ == "__main__":
-    with open('./predictions.json', 'r') as f:
+    with open('../predictions.json', 'r') as f:
         for line in f:
             parse_json_to_separate_files(line.strip())
